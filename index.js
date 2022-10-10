@@ -1,21 +1,14 @@
-function getMemes(){
-    let memesName = "";
+'use strict';
+
+function setMemeSrc(){
     $.ajax({
         type: "GET",
         url: "getMeme.php",
-        dataType: "json",
         success: (r)=>{
-            console.log(r);
-            memesName = r;
+            $("#memes").attr("src", `memes/${r}`);
         }
     });
-    return memesName;
-}
-
-function setMemeSrc(){
-    let memesName = getMemes();
-    console.log(`MemeFileName = ${memesName}`);
-    $("#memes").css("background-image", memesName);
+    
 }
 
 $(document).ready(()=>{

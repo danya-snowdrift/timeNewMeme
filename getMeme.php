@@ -1,9 +1,10 @@
 <?php
 
 $fileName="test";
-$allMemes = scandir("memes");
-$fileName = $allMemes[mt_rand(0,count($allMemes))];
+$allMemes = array_diff(scandir("memes"), array(".", ".."));
+$fileName = $allMemes[array_rand($allMemes)];
+echo $fileName;
 
-echo json_encode($fileName);
+//echo json_encode($allMemes);
 
 ?>
