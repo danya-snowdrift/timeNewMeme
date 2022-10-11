@@ -12,11 +12,18 @@
     <script src="jquery.js"></script>
     <title>Мемес</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body class="container-fluid bg-black text-white">
-    <div class="text-center display-4">Рандомный мем раз в 5 секунд</div>
-    <div class="text-center mt-3">
-        <img id="memes" src="#" class="img-fluid" style="max-width: 400px;">
+    <div id="text" class="text-center display-4 mb-3"></div>
+    <div class="row text-center justify-content-center">
+        <div class="col-11">
+            <img id="memes" src="#" class="img-fluid">
+        </div>
+        <div class="col-1">
+            <input id="range" type="range" orient="vertical" min="1" max="5" step="0.1">
+        </div>
     </div>
+
 </body>
 </html>
