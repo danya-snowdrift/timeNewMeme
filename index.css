@@ -1,0 +1,12 @@
+#range
+{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 8px;
+    height: 500px;
+    padding: 0 5px;
+}
+
+#memes{
+    height:500px;
+}
